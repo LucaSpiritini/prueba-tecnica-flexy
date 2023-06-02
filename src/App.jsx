@@ -1,12 +1,12 @@
-// import './App.css'
+import RegistrateSerAgenteScreen from "./screens/registrateSerAgente/RegistrateSerAgenteScreen";
 
 function App() {
-
   return (
-    <>
-      <div>Flexy</div>
+    <> 
+      {/* Aquí utilizaría React Router Dom para indicarle a App.jsx que screen renderizar */}
+      <RegistrateSerAgenteScreen />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

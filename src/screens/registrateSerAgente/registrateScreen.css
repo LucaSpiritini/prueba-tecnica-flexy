@@ -1,0 +1,8 @@
+.registrate-main-container {
+  background-color: #fff;
+  position: relative;
+  width: 1643px;
+  height: 950px;
+  display: flex;
+  flex-direction: row;
+}
