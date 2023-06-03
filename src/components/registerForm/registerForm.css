@@ -1,7 +1,119 @@
-.form-container {
+.register-container {
   width: 693px;
   height: 950px;
-  background-color: salmon;
   display: flex;
   flex-direction: column;
+}
+
+.top-navbar {
+  /* display: flex; */
+  /* flex-direction: row;  */
+  height: 96px;
+  border-bottom: 1.5px solid #f0effb;
+  border-top: 30px;
+}
+
+.logo {
+  margin-top: 28px;
+  margin-left: 15px;
+  width: 120px;
+  height: 40px;
+  background: url("../../assets/flexy-icono.png");
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  margin-top: 83px;
+  padding-left: 123px;
+}
+
+.titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 352px;
+  height: 72px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.bienvenido {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: #000929;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.parrafo {
+  width: 352px;
+  height: 24px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000929;
+  opacity: 0.5;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 197px;
+  gap: 24px;
+  position: absolute;
+  width: 352px;
+  height: 586px;
+  left: 123px;
+  top: 275px;
+  /* background-color: salmon; */
+}
+
+.subi-tu-foto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+  width: 210px;
+  height: 47px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.icono {
+  cursor: pointer;
+  width: 47px;
+  height: 47px;
+  background: url("../../assets/subir-imagen.png");
+}
+
+.parrafo-dos {
+  width: 154px;
+  height: 22px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000929;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }

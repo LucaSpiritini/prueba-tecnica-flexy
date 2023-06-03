@@ -1,4 +1,5 @@
 import RegistrateSerAgenteScreen from "./screens/registrateSerAgente/RegistrateSerAgenteScreen";
+import './app.css'
 
 function App() {
   return (
