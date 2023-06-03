@@ -6,3 +6,23 @@ FECHA DE ENTREGA: 7/06 hasta las 12hs.
 • Entregar en tiempo y forma vía correo adjuntando el link al repositorio (GitHub, etc).
 • Adjuntar fotografía del proyecto.
 • Desarrollar en React (si lo desarrollás en React Native suma puntos).
+
+
+
+COMENTARIOS:
+
+
+Lo desarrollé "estático" porque interpreté que quieren esas medidas que figuran en Figma (por ejemplo, el tamaño de la imagen es de 950px x 950px).
+Entonces para que puedan visualizarlo sin desbordes, deben ajustar los pixeles del navegador web en 1643x950 y 375x812
+
+Registrate Ser Agente : 1643px X 950px
+Registrate Agente Mobile : 375px X 812px
+
+Sino hubiera usado CSS Flexible Box Layout:
+Usaría 3 queries y haría que los componentes se vayan agrandando o achicando dentro de un contenedor padre y asignaría max/min-width/height.
+-Una para pantallas de 14 a 17 pulgadas y restringir un ancho máximo al body para dejarle un margen blanco a cada costado cuando la pantalla supere los 1400px.
+-Una para tablets (1080px X 810px)
+-Una para celulares con una medida mínima de 350px, por debajo de eso en mi experiencia se rompe.
+
+
+Use la menor cantidad de librerias posibles. Todo "vanilla".

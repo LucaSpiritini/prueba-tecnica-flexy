@@ -70,7 +70,7 @@
   flex-grow: 0;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -84,7 +84,7 @@
   /* background-color: salmon; */
 }
 
-.subi-tu-foto {
+/* .subi-tu-foto {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -95,7 +95,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-}
+} */
 
 .icono {
   cursor: pointer;
@@ -104,7 +104,7 @@
   background: url("../../assets/subir-imagen.png");
 }
 
-.parrafo-dos {
+/* .parrafo-dos {
   width: 154px;
   height: 22px;
   font-family: "Plus Jakarta Sans";
@@ -116,4 +116,5 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-}
+} */
+
