@@ -2,7 +2,7 @@ export default function Validation(values) {
   const errors = {}
 
   const email_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,6}$/;
-  const password_pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,}$/; //minimo 8 caracteres, una mayuscula una minuscula, un numero del 0 al 9
+  const password_pattern = /^.{8,}$/; //minimo 8 caracteres
 
   if(values.image === "") {
     errors.image = "Suba una imagen de perfil";

@@ -3,3 +3,9 @@
   height: 950px;
   background: url('../../assets/inicia-sesion-agente2.jpg');
 }
+
+@media only screen and (max-width: 375px) {
+  .image-container {
+    display: none;
+  }
+}

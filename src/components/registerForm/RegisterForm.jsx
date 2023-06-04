@@ -27,76 +27,143 @@ const RegisterForm = () => {
     <div className="register-container">
       <div className="top-navbar">
         <div className="logo"></div>
+        <div className="menu">| |</div>
+      </div>
+
+      <div className="headline">
+        <h3 className="bienvenido">¡Bienvenido!</h3>
+        <p className="parrafo">Convertite ahora en un agente Flexy.</p>
       </div>
 
       <div className="form-container">
-        <div className="titulos">
-          <h3 className="bienvenido">¡Bienvenido!</h3>
-          <p className="parrafo">Convertite ahora en un agente Flexy.</p>
-        </div>
-
-        <div className="form">
-          {/* <div className="subi-tu-foto">
-            <div className="icono"></div>
-            <p className="parrafo-dos">
-              Subí tu foto de perfil
-            </p>
-          </div> */}
-
-          <form onSubmit={handleValidation}>
-            <div className="form-input-div">
-              <input
-                type="file"
-                placeholder=""
-                name="image"
-                className=""
-                onChange={handleInput}
-              />
-              {errors.image && <p style={{ color: "red" }}>{errors.image}</p>}
+        <form onSubmit={handleValidation}>
+          <div className="">
+            <div className="upload-image-div">
+              <div className="image">
+                {/* <input
+                  type="file"
+                  name="image"
+                  id=""
+                  className=""
+                  onChange={handleInput}
+                /> */}
+              </div>
+              <p className="upload-image-text">Subí tu foto de perfil</p>
+              {/* {errors.image && <p style={{ color: "red" }}>{errors.image}</p>} */}
             </div>
-            <div className="form-input-div">
+          </div>
+
+          <div className="input-div">
+            <div className="">
               <input
                 type="text"
+                id="name"
                 placeholder="Nombre y Apellido"
                 name="name"
-                className="form-input"
+                className="input"
                 onChange={handleInput}
               />
-              {errors.name && <p style={{ color: "red" }}>{errors.name}</p>}
             </div>
-            <div className="form-input-div">
+            {errors.name && (
+              <p
+                style={{
+                  color: "red",
+                  marginTop: "-10px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                {errors.name}
+              </p>
+            )}
+          </div>
+
+          <div className="input-div">
+            <div className="">
               <input
                 type="text"
-                placeholder="+54 01 0200 000"
+                id="phone"
+                placeholder="+54 9 221 000 0000"
                 name="phone"
-                className="form-input"
+                className="input"
                 onChange={handleInput}
               />
-              {errors.phone && <p style={{ color: "red" }}>{errors.phone}</p>}
             </div>
-            <div className="form-input-div">
+            {errors.phone && (
+              <p
+                style={{
+                  color: "red",
+                  marginTop: "-10px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                {errors.phone}
+              </p>
+            )}
+          </div>
+
+          <div className="input-div">
+            <div className="">
               <input
                 type="email"
+                id="email"
                 placeholder="hola@tuemail.com"
                 name="email"
-                className="form-input"
+                className="input"
                 onChange={handleInput}
               />
-              {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
             </div>
-            <div className="form-input-div">
+            {errors.email && (
+              <p
+                style={{
+                  color: "red",
+                  marginTop: "-10px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                {errors.email}
+              </p>
+            )}
+          </div>
+
+          <div className="password-input-div">
+            <div className="">
               <input
                 type="password"
+                id="password"
                 placeholder="Ingresá tu contraseña"
                 name="password"
-                className="form-input"
+                className="input"
                 onChange={handleInput}
               />
-              {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
             </div>
-            <button>Registrate</button>
-          </form>
-        </div>
+            {errors.password && (
+              <p
+                style={{
+                  color: "red",
+                  marginTop: "-10px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                {errors.password}
+              </p>
+            )}
+            <p className="caracteres">Debe tener al menos 8 caracteres.</p>
+            <p className="olvidaste-contraseña">¿Olvidaste tu contraseña?</p>
+          </div>
+
+          <div className="button-div">
+            <button className="button">
+              <p className="button-p">Registrate</p>
+            </button>
+
+            <p className="button-div-p">
+              ¿Ya tenés una cuenta?{" "}
+              <b style={{ cursor: "pointer", color: "#000929" }}>
+                Iniciá sesión
+              </b>
+            </p>
+          </div>
+        </form>
       </div>
     </div>
   );

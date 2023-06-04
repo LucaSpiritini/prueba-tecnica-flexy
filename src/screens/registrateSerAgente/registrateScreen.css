@@ -1,8 +1,15 @@
 .registrate-main-container {
   background-color: #fff;
   position: relative;
-  width: 1643px;
-  height: 950px;
+  max-width: 1643px;
+  max-height: 950px;
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 375px) {
+  .registrate-main-container {
+    min-width: 375px;
+    min-height: 812px;
+  }
 }
