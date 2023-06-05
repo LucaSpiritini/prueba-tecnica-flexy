@@ -4,137 +4,204 @@
 .olvidaste-contraseña {
   display: none;
 }
+.register-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.form-container form {
+  /* Form */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 0px 197px 0px;
+  gap: 24px;
+  position: absolute;
+  width: 352px;
+  height: 586px;
+  left: 123px;
+  top: 275px;
+  /* background-color: salmon; */
+}
+.upload-image-div {
+  /* subi tu foto */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+  width: 210px;
+  height: 47px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.upload-image-text {
+  width: 154px;
+  height: 22px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 0px 0px 29px 0px;
+  /* or 22px */
+  /* Main Color/Black */
+  color: #000929;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.image {
+  cursor: pointer;
+  width: 47px;
+  height: 47px;
+  display: block;
+  background: url("../../assets/subir-imagen.png");
+}
+.caracteres {
+  /* Debe tener al menos 8 caracteres */
+  width: 226px;
+  height: 20px;
+  /* Body / Small 140% / Regular */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  margin-bottom: 25px;
+}
+.button-div-p {
+  /* ¿Ya tenés una cuenta? Inicia sesión */
+  width: 231px;
+  height: 20px;
+  /* Body / Small 140% / Medium */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  text-align: center;
+  /* Greyscale/Grey 500 */
+  color: #6c727f;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding-bottom: 50px;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  width: 352px;
+  height: 48px;
+  /* Main Color/Primary */
+  background: #7065f0;
+  border-radius: 8px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+  cursor: pointer;
+}
+.button-div .button {
+  margin-bottom: 24px;
+}
+.button-p {
+  /* Sign up */
+  width: 81px;
+  height: 24px;
+  /* Body/Medium 150%/Bold */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  font-feature-settings: "ss06" on, "ss04" on, "liga" off;
+  /* Main Color/White */
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.password-input-div,
+.input-div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0px 0px 29px 0px; */
+  /* gap: 14px; */
+  /* width: 352px; */
+}
+.input {
+  /* Frame */
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 16px;
+  /* gap: 10px; */
+  width: 352px;
+  height: 48px;
+  /* Shades of Purple/Purple 98 */
+  background: #f7f7fd;
+  /* Shades of Purple/Purple 92 */
+  border: 1px solid #e0def7;
+  border-radius: 8px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
 
 @media only screen and (max-width: 375px) {
+  .menu {
+    display: block;
+  }
   .register-container {
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
-  .top-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 375px;
-    height: 72px;
-    border-bottom: 1.5px solid #f0effb;
-  }
-  .logo {
-    cursor: pointer;
-    margin-left: 24px;
-    width: 120px;
-    height: 40px;
-    background: url("../../assets/flexy-icono.png");
-  }
-  .menu {
-    display: block;
-    cursor: pointer;
-    margin-right: 24px;
-    transform: rotate(90deg);
-    color: #000929;
-  }
-  .headline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    position: absolute;
-    width: 327px;
-    height: 72px;
-    left: 24px;
-    top: 134px;
-  }
-  .bienvenido {
-    /* ¡Bienvenido! */
-    width: 327px;
-    height: 40px;
-    /* Heading/H3 */
-    font-family: "Plus Jakarta Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 125%;
-    /* identical to box height, or 40px */
-    text-align: center;
-    letter-spacing: -0.01em;
-    /* Main Color/Black */
-    color: #000929;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .parrafo {
-    /* Convertite ahora en un agente Flexy. */
-    width: 327px;
-    height: 24px;
-    /* Body / Medium 150% / Medium */
-    font-family: "Plus Jakarta Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    /* identical to box height, or 24px */
-    text-align: center;
-    /* Main Color/Black */
-    color: #000929;
-    opacity: 0.5;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-  .form-container {
+  .form-container form {
+    /* Nombre y apellido */
+    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 24px;
+    gap: 0px;
     position: absolute;
     width: 327px;
     height: 388px;
     left: 24px;
     top: 237px;
+    /* background-color: blue; */
   }
   .upload-image-div {
-    /* subi tu foto */
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding-bottom: 24px;
-    gap: 9px;
-    width: 210px;
-    height: 47px;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .image {
-    cursor: pointer;
-    width: 47px;
-    height: 47px;
-    display: block;
-    background: url("../../assets/subir-imagen.png");
-  }
-  .upload-image-text {
-    width: 154px;
-    height: 22px;
-    font-family: "Plus Jakarta Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    padding: 0px 0px 29px 0px;
-    /* or 22px */
-    /* Main Color/Black */
-    color: #000929;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    margin-bottom: 24px;
   }
   .password-input-div,
   .input-div {
@@ -192,10 +259,6 @@
     cursor: pointer;
   }
   .button-div {
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 0px;
     gap: 20px;
     width: 327px;
@@ -214,15 +277,6 @@
     gap: 10px;
     width: 327px;
     height: 48px;
-    /* Main Color/Primary */
-    background: #7065f0;
-    border-radius: 8px;
-    border: none;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    cursor: pointer;
   }
   .button-p {
     /* Sign up */
@@ -243,26 +297,6 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-  }
-  .button-div-p {
-    /* ¿Ya tenés una cuenta? Inicia sesión */
-    width: 231px;
-    height: 20px;
-    /* Body / Small 140% / Medium */
-    font-family: "Plus Jakarta Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    /* identical to box height, or 20px */
-    text-align: center;
-    /* Greyscale/Grey 500 */
-    color: #6c727f;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    padding-bottom: 50px;
   }
   input::placeholder {
     font-family: "Plus Jakarta Sans";

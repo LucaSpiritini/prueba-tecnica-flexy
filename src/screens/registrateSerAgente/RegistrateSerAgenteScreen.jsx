@@ -1,13 +1,29 @@
 import React from "react";
 import "./registrateScreen.css";
 import RegisterForm from "../../components/registerForm/RegisterForm";
-import Image from "../../components/imageRegistrateSerAgente/Image";
 
 const RegistrateSerAgenteScreen = () => {
   return (
     <div className="registrate-main-container">
-      <RegisterForm />
-      <Image />
+
+      <div className="children-container">
+
+        <div className="top-navbar">
+          <div className="logo"></div>
+          <div className="menu">| |</div>
+        </div>
+
+        <div className="headline">
+          <h3 className="bienvenido">¡Bienvenido!</h3>
+          <p className="parrafo">Convertite ahora en un agente Flexy.</p>
+        </div>
+
+        <RegisterForm />
+
+      </div>
+
+      <div className="inicia-sesion-agente"></div>
+      
     </div>
   );
 };

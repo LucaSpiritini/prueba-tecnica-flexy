@@ -1,15 +1,155 @@
 .registrate-main-container {
-  background-color: #fff;
-  position: relative;
-  max-width: 1643px;
-  max-height: 950px;
+  margin: auto;
+  width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+  height: 96px;
+  border-bottom: 1.5px solid #f0effb;
+}
+.logo {
+  cursor: pointer;
+  margin-left: 24px;
+  width: 120px;
+  height: 40px;
+  background: url("../../assets/flexy-icono.png");
+}
+.headline {
+  /* Titulos */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 352px;
+  height: 72px;
+  left: 123px;
+  top: 179px;
+}
+.bienvenido {
+  /* ¡Bienvenido! */
+  width: 352px;
+  height: 40px;
+  /* Heading/H3 */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  /* identical to box height, or 40px */
+  letter-spacing: -0.01em;
+  /* Main Color/Black */
+  color: #000929;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.parrafo {
+  /* Convertite ahora en un agente Flexy. */
+  width: 352px;
+  height: 24px;  
+  /* Body / Medium 150% / Medium */  
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */  
+  /* Main Color/Black */  
+  color: #000929;  
+  opacity: 0.5;  
+  /* Inside auto layout */  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.inicia-sesion-agente {
+  position: absolute;
+  width: 950px;
+  height: 950px;
+  left: 693px;
+  top: 0px;
+  background: url("../../assets/inicia-sesion-agente2.jpg");
 }
 
 @media only screen and (max-width: 375px) {
-  .registrate-main-container {
-    min-width: 375px;
-    min-height: 812px;
+  /* Aca es vista celular */
+  .inicia-sesion-agente {
+    display: none;
+  }
+  .top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 375px;
+    height: 72px;
+    border-bottom: 1.5px solid #f0effb;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+    margin-right: 24px;
+    transform: rotate(90deg);
+    color: #000929;
+  }
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 327px;
+    height: 72px;
+    left: 24px;
+    top: 134px;
+  }
+  .bienvenido {
+    /* ¡Bienvenido! */
+    width: 327px;
+    height: 40px;
+    /* Heading/H3 */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    /* identical to box height, or 40px */
+    text-align: center;
+    letter-spacing: -0.01em;
+    /* Main Color/Black */
+    color: #000929;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .parrafo {
+    /* Convertite ahora en un agente Flexy. */
+    width: 327px;
+    height: 24px;
+    /* Body / Medium 150% / Medium */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    /* Main Color/Black */
+    color: #000929;
+    opacity: 0.5;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
   }
 }

@@ -25,16 +25,6 @@ const RegisterForm = () => {
 
   return (
     <div className="register-container">
-      <div className="top-navbar">
-        <div className="logo"></div>
-        <div className="menu">| |</div>
-      </div>
-
-      <div className="headline">
-        <h3 className="bienvenido">¡Bienvenido!</h3>
-        <p className="parrafo">Convertite ahora en un agente Flexy.</p>
-      </div>
-
       <div className="form-container">
         <form onSubmit={handleValidation}>
           <div className="">
@@ -147,11 +137,11 @@ const RegisterForm = () => {
                 {errors.password}
               </p>
             )}
-            <p className="caracteres">Debe tener al menos 8 caracteres.</p>
             <p className="olvidaste-contraseña">¿Olvidaste tu contraseña?</p>
           </div>
 
           <div className="button-div">
+            <p className="caracteres">Debe tener al menos 8 caracteres.</p>
             <button className="button">
               <p className="button-p">Registrate</p>
             </button>
