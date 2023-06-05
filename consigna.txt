@@ -20,9 +20,10 @@ Registrate Agente Mobile : 375px X 812px
 
 Sino hubiera usado CSS Flexible Box Layout:
 Usaría 3 queries y haría que los componentes se vayan agrandando o achicando dentro de un contenedor padre y asignaría max/min-width/height.
--Una para pantallas de 14 a 17 pulgadas y restringir un ancho máximo al body para dejarle un margen blanco a cada costado cuando la pantalla supere los 1400px.
+-Una para pantallas de 14 a 17 pulgadas y restringir un ancho máximo al body para dejarle un margen blanco a cada costado cuando la pantalla supere los 1400/1600px.
 -Una para tablets (1080px X 810px)
 -Una para celulares con una medida mínima de 350px, por debajo de eso en mi experiencia se rompe.
 
 
-Use la menor cantidad de librerias posibles. Todo "vanilla".
+No usé librerias.
+Era un formulario corto, si fuera un formulario mas grande haría de cada input del formulario un componente.
